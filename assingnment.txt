@@ -1,0 +1,88 @@
+1. working on different variables
+
+	K=10
+	print(K) 
+	10   
+
+	a,l,y,n=1,2,3,4
+	print(a,l,y,n)
+	1,2,3,4
+
+	#multiple variables with single assignment
+	a=b=c=d=1000
+	print(a,b,c,d)
+	1000 1000 1000 1000
+
+
+2. working on string concatenation
+
+	firstname="venkata"
+	lastname=" sunny"
+	print(firstname+lastname)
+	venkata sunny
+
+
+3. program for simple calculator
+
+a=input("enter the num1")
+b=input("enter the num2")
+opt=input(select: + addtion, - substraction, * multiplication, / division)
+if opt=='+':
+	print(a+b)
+elif opt=='-':
+	print(a-b)
+elif opt=='*':
+	print(a*b)
+elif opt=='/':
+	print(a/b)
+else:
+	print("invalid")
+
+
+4.find the type of available datatypes in python
+
+k="hello"
+print(type(k))
+s=20
+print(type(s))
+d=10.00
+print(type(d))
+f=True
+print(type(f))
+
+5. functions in python
+
+we use def keyword to define a function in python
+
+def add():
+	t=10
+	u=20
+	v=a+b
+	print(v)
+add()
+
+6. string functions 
+
+def sum( arg1, arg2 ):
+ total = arg1 + arg2
+ print "Inside the function : ", total
+ return total;
+   
+
+POWER SHELL
+
+
+1.Run a script and demonstrate about  get-update, get-unique, get-date and get-alias.
+
+get-date : it displays the current date and time.
+get-process : it displays all the processess that are running on the system.
+get-alias : it displays all the alias names for the commands that we use in powershell.
+write-host : it is used to display whatever we right next to the command write-host.
+
+
+2.Run a script and demonstrate if elseif condition?
+
+	$india="virat"
+	$sa="abd"
+	if ($india -eq "virat") {'our captain'} elseif ($india -eq "abd") {'they are frnds'}
+		our captain
