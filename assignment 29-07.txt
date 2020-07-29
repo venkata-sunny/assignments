@@ -1,0 +1,84 @@
+1.write a python program to print prime numbers without using loops?
+def prime_number(n, d):
+    if n//2 < d:
+     print("True")
+    if n%d == 0:
+      print("False")
+    print(prime_number(n, d+1))
+
+def find_primes(n,i, result):
+  if i == n + 1:
+    print(result)
+  if prime_number(i, 2):
+    result.append(i)
+  print(find_primes(n, i+1, result))
+print(find_primes(20,2, []))
+output:[2,3,5,7,11,13,17,19]
+
+
+
+2.work on bitwise operators?
+Bitwise operators perform operation on binary pattern.
+Some of the bitwise operators are:
+&,|,^,<<,>>,~.
+eg: x=2
+    y=1
+    print(x&y)
+    print(x|y)
+    print(x^y)
+    print(x<<y)
+    print(x>>y)
+output:0
+       3
+       3 
+       4
+       1
+
+
+
+3.work on comparision operators?
+
+It is also know as relational operator.
+Some of the comparision operators are:
+==,!=,<=,....etc
+eg: k=50
+    s=90
+    if(k>=s):
+       print("s is big")
+    elif(k==s):
+       print("both equal")
+    elif(k!=s):
+       print("both not equal")
+    else:
+       print("s is big")
+output: both are not equal
+
+
+
+4.Work on assignment operator in python?
+
+various assignment operators are:
+//=, !=, ^=, >>=, <<=,+=, -=, /=, *=, **=. 
+eg: k=10	
+    s=20	
+    k+=s
+    print(k)
+output:30
+
+
+
+5.Methods
+
+syntax:random.getstate()
+randint()-used to generate a random number and return an integer number from the specific range.
+syntax:random.randint()
+randrange-used to return the selected element from the specific range.
+syntax:random.randrange(start,stop,step)
+choices()-used to return a random selected item of the list from the specified range of list or tuple or the other.
+syntaxrandom.choices(sequence,weights=none,cum_weights=none,k=1)
+shuffle()-used to randomize or shuffle the sequence of lists or tuple or other.
+syntax:random.shuffle(sequence,function)
+choice()-used to return the random sequence element from the list or tuple.
+syntax:random.choice(sequence)
+
+
