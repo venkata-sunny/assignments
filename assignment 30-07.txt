@@ -1,0 +1,86 @@
+1. example on -ne 0r -eq operators?
+
+k=10
+if [[ $k -ne 0 ]]
+then
+    echo "$n is a non-zero num"
+else
+    echo "$n i a zero num"
+fi    
+output:-10 is a non-zero num
+
+
+2.Example on < or <= or > or >= ?
+
+k=9
+m=s
+if [[ $k > $s ]]
+then
+    echo "$n is a non-zero num"
+else
+    echo "$n is a zero num"
+fi    
+
+o/p:-9 is a non-zero num
+
+
+3. Example on == or != or = ?
+
+n="bom"
+m="bomb"
+if [ $n != $m ]
+then
+    echo "not equaql"
+else
+    echo "equal"
+fi    
+
+output:- not equal
+
+
+4.Example on -k or -s ?
+
+string="vt"
+if [ -s $string ]
+then
+    echo "if block"
+else
+    echo "else block"
+fi    
+    
+output:-else block
+
+5. Example on for or untill or while loop?
+
+n=2
+while [ $n -lt 5 ]
+do
+  echo $n
+  n=`expr $n + 1`
+done  
+
+o/p:-
+2
+3
+4
+
+6.Arithmetic operators?
+
+let s="10%3"
+echo $s
+
+o/p:-1
+
+7.Assignment operators?
+
+k=100
+echo $((k*=4))
+
+outpup:-400
+
+8.Increment operators?
+
+a=10
+echo $((a++ + a-- - a-- + ++a * --a))
+
+o/p:-101
