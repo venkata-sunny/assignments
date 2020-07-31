@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            welcome to js
+        </title>
+    </head>
+
+    <body>
+        <h1>js programing</h1>
+        <p id="view"> </p>
+    <p id="view1"></p>
+        <script>
+            document.getElementById("view").innerHTML=2+2;
+            document.write(10+20);
+
+            
+
+            console.log(20+20);
+            console.log("Hello");
+            var k,y,l;
+            k=5;
+            y=6;
+            l=k+y;
+            document.getElementById("view").innerHTML="The value of z is:"+l;
+            console.log("The value of l is:"+l);
+            console.log(k+y);
+         //literals in js
+         //Integer and string
+         var s=10;
+         document.write(k); 
+         console.log(k);  
+        </script>
+        <script>
+            var firstname,lastname;
+            firstname="me";
+            lastname="Sunny";
+
+            document.getElementById("view1").innerHTML=(firstname + lastname); 
+        </script>
+        <p id="view2"></p>
+       <script>
+//variables
+
+var p1 = 5;
+var p2 = 6;
+var n1="tv";
+var n2="phone"
+var total = p1 + p2;
+document.getElementById("view2").innerHTML =n1+":"+p1+"<br>"+n2+":"+p2+"<br>"+"The total price is: " + total;
+
+       </script>
+       <p id="view3"></p></p>
+<script>
+    //variables and operators
+  var a=10;
+  var b=20;
+  var k=a+b;var y=a-b;var l=a/b;var w=a*b;
+  document.getElementById("view3").innerHTML=x+"<br>"+y+"<br>"+z+"<br>"+w;
+</script>
+<p id="view4"></p>p></p>
+  <script>
+//datatypes
+var name="sunny";
+var age=21;
+var mail;
+var option=true;
+document.getElementById("view4").innerHTML=name+" "+age+" "+option+"<br>"+typeof(name)+
+" "+typeof(age)+" "+typeof(mail)+" "+typeof(option);
+  </script>  
+<p id="view5"></p>
+<p id="view6"></p>
+<script>
+    //arrays
+var veg = ["Brinjal", "ladiesfinger", "potato", "cucumber"];
+document.getElementById("trail5").innerHTML = veg.length;
+document.getElementById("view6").innerHTML = veg;
+</script>
+<p id="view7"></p>
+<p id="view8"></p>
+<script>
+    //functions
+var k = myFunction(4, 3);
+document.getElementById("view7").innerHTML = k;
+
+function myFunction(a, b) {
+  return a * b;
+}
+function print(){
+    document.getElementById("view8").innerHTML="Hey, iam sunny";
+}
+print();
+</script>
+<p id="view9"></p>
+<script>
+// Create an object:
+var person = {
+  firstName: "kalyani",
+  lastName: "ji",
+  age: 50,
+  eyeColor: "brown"
+};
+
+// Display some data from the object:
+document.getElementById("view9").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+<p id="view10"></p>
+<script>
+function myFunction() {
+  var age, vote;
+  age = 22;
+  if (isNaN(age)) {
+    vote = "Input is not a number";
+  } else {
+    vote = (age < 18) ? "Too young" : "Old enough";
+  }
+  document.getElementById("view10").innerHTML = vote;
+}
+myFunction();
+</script>
+<p id="view11"></p>
+<script>
+var text = "";
+var i = 0;
+while (i < 10) {
+  text += "<br>The number is " + i;
+  i++;
+}
+document.getElementById("view11").innerHTML = text;
+</script>
+<p id="view12"></p>
+
+<script>
+var text = "";
+var i;
+for (i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+document.getElementById("view12").innerHTML = text;
+</script>
+    </body>
+</html> 
