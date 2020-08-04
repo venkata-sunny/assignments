@@ -1,0 +1,46 @@
+1.JAVA PROGRAM FOR CONTROL STATEMENTS:
+
+  public class controlstatements{
+ public static void main(String[] args) {      
+  controlstatements obj = new controlstatements();
+  System.out.println("Please enter a number");
+  int n=in.nextInt();       
+if(n%2==0){
+   System.out.println(n+" is even number");
+   }
+   if(n%2!=0){
+     System.out.println(n+" is odd number");
+}}}
+
+
+2.JAVA PROGRAM FOR INSTANCE VARIABLE:
+
+public class instance variable{
+	int instance;
+	static String static;
+	public void method() {
+		final String local= "Initial Value";
+		System.out.println(local);
+    }
+	public static void main(String args[]) {
+		instancevariable obj = new instancevariable();
+		System.out.println(obj.instance);
+		System.out.println(obj.static);
+    System.out.println(instancevariable.static);
+                System.out.println(new instancevariable().instance);
+	}}
+
+
+3.JAVA PROGRAM FOR STATIC VARIABLES:       
+
+public class main{
+   static int count=0;
+       count++;
+   public static void main(String args[])
+   {
+       VariableDemo obj1=new VariableDemo();
+       VariableDemo obj2=new VariableDemo();
+       System.out.println("Obj1: count is="+obj1.count);
+       System.out.println("Obj2: count is="+obj2.count);
+   }
+}   
